@@ -1,22 +1,74 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+    int main () {
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+        char estado, cidade [50], codigo [10];
+        int população, pontos_turisticos; 
+        float area, pib;
 
-    return 0;
-}
+//Carta número 1 (um)
+    printf("Escolha um dentre os estados e digite sua inicial: Acre, Alagoas, Amapá, Amazonas, Bahia, Ceará, Espírito Santo e Goiás\n");
+    scanf(" %c", &estado);
+    
+    printf("Escolha um número de 01 à 04:\n");
+    scanf("%s", &codigo);
+
+    printf("Digite o nome da cidade:\n");
+    scanf("%s", &cidade);
+
+    printf("Digite o número da população:");
+    scanf("%d", &população);
+
+    printf("Digite a área por quilômetros quadrados:");
+    scanf("%f", &area);
+
+    printf("Digite o PIB:\n");
+    scanf("%f", &pib);
+
+    printf("Digite q quantidade de pontos turísticos:\n");
+    scanf("%d", &pontos_turisticos);
+
+    printf ("Carta 1:\n");
+    printf ("Estado: %c \n", estado);
+    printf ("Código da Carta: %c%s\n", estado, codigo);
+    printf ("Nome da Cidade: %s\n", cidade);
+    printf("População: %d\n", população);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f reais\n", pib);
+    printf("Número de pontos turísticos: %d\n", pontos_turisticos);
+
+//Carta número 2 (dois)
+    printf("Escolha um dentre os estados e digite sua inicial: Acre, Alagoas, Amapá, Amazonas, Bahia, Ceará, Espírito Santo e Goiás\n");
+    scanf(" %c", &estado);
+    
+    printf("Escolha um número de 01 à 04:\n");
+    scanf("%s", &codigo);
+
+    printf("Digite o nome da cidade:\n");
+    scanf("%s", &cidade);
+
+    printf("Digite o número da população:");
+    scanf("%d", &população);
+
+    printf("Digite a área por quilômetros quadrados:");
+    scanf("%f", &area);
+
+    printf("Digite o PIB:\n");
+    scanf("%f", &pib);
+
+    printf("Digite q quantidade de pontos turísticos:\n");
+    scanf("%d", &pontos_turisticos);
+
+    printf ("Carta 2:\n");
+    printf ("Estado: %c \n", estado);
+    printf ("Código da Carta: %c%s\n", estado, codigo);
+    printf ("Nome da Cidade: %s\n", cidade);
+    printf("População: %d\n", população);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f reais\n", pib);
+    printf("Número de pontos turísticos: %d\n", pontos_turisticos);
+    
+
+
+return 0;
+    }
